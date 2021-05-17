@@ -1,27 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cody's Wonderful Quiz</title>
-</head>
-<body>
-    <div class="grid">
-        <div id="quiz">
-            <h1>Welcome to the Code Quiz!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-            <p id="question"></p>
+  <body>
+    <header class="clearfix">
+      <div id="highscoresDiv">
+        <button type="button" class="btn btn-light" id="highscores">
+          View highscores
+        </button>
+      </div>
 
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-            </div>
+      <div id="timerDiv">Time Left : <span id="timer"></span></div>
+    </header>
+
+    <div class="row justify-content-center"  id="startDiv">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1>Coding Quiz Challenge</h1>
+          <h5>Try to answer the following code-related questions within the time limit. Keep in mind that wrong answers will penalize your score/time by 10 seconds!</h5>
+          <h3>Good luck!</h3>
         </div>
-    </div>    
-</body>
-    <script src="script.js"></script>
+
+      </div>
+      <div class="row justify-content-center">    
+        <div class="col-md" id="startQuiz">
+          <button>Start Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" id="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8" id="quizDiv">
+        <!-- <h1>Code Quiz</h1> -->
+        <div class="quiz-container">
+          <div id="quizQ"></div>
+          <div class="row justify-content-center" id="choiceBtns"></div>
+          <div id="answer"></div>
+        </div>
+    </div>
+  </div>
+  </div>
+    <div class="row justify-content-center">
+      <div class="end-container" id="endQuiz">
+        <div class="col-md">
+          <h1>You finished!</h1>
+          <h3>Your score is</h3>
+          <h1 id="score"></h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md end">
+              <input
+              type="text"
+              id="initials"
+              placeholder="Please Enter your Initials..."
+              />
+
+          </div>
+          <div class="col-md" id="submitcontainer">
+              <button id="submit">Submit Quiz</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" id="startOver">
+      <div class="end-container">
+        <div class="col-md">
+          <h1>Would you like to play again?</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md" id="restartDiv">
+              <button id="restart">Start Over</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="scoresDiv" style="display: none">
+      <h1>Scores: </h1>
+      <div class="col-md-5" id="highscoreDisp">
+      </div>
+
+    </div>
+    
+    <script src="js/assets.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
