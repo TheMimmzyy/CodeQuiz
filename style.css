@@ -23,7 +23,7 @@ header {
   height: 350px;
   width: 500px;
   padding: 20px;
-  margin: 20px 0px 20px 255px;
+  margin: 20px 0px 20px 355px;
   position: relative;
   font-size: 18px;
   letter-spacing: 1px;
@@ -114,7 +114,7 @@ h1, h3, h5 {
 .end {
   display: flex;
   align-items: center;
-  padding-left: 127px;
+  padding-left: 133px;
 }
 
 body {

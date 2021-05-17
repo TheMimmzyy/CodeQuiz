@@ -1,4 +1,4 @@
-var totalTime = 75;
+var totalTime = 60;
 var start = document.querySelector("#startQuiz");
 var count = 0;
 var totalPoints = 0;
