@@ -8,3 +8,5 @@ With the style sheet I started with setting up styling for all the major element
 
 Script.js/Assets.js:
 These files contain most the functionality of the page and were the most difficukt to work with by far. I began by setting up all the necessary variables I would need throughout the file. Next moving to functions that would be accessed while still at the starting page, such as the highscore button. After that I began coding necessary functions as they came to mind. This started with the timer and submit functions and then the quiz functions. These would populate the page with the next question, as well as take away time if the answer were wrong. Last was the timeout function if the time happened to reach 0.
+
+App can be accessed at: https://themimmzyy.github.io/CodeQuiz/index.html
